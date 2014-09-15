@@ -6,6 +6,10 @@ apt-get update
 
 # System and account conifg:
 apt-get install -y ubuntu-desktop
+
+if [ ! -d "/home/vagrant/Desktop" ]; then
+    mkdir "/home/vagrant/Desktop"
+fi
 ln -s /vagrant /home/vagrant/Desktop/shared
 cp /vagrant/system/dotprofile /home/vagrant/.profile
 
