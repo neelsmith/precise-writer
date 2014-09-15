@@ -15,7 +15,7 @@ When the build has completed, use the GUI login window shown below to login (pas
 ![Login screen](imgs/login.png)
 
 Double click the icon labelled "Set up Desktop", then logout (using the "gear" icon at the
-top right of the window, and log back in.  Your launcher bar should be configured like the one 
+top right of the window), and log back in.  Your launcher bar should be configured like the one 
 shown below, with icons for Retext (a markdown editor), JEdit (a validating XML editor), and
 a terminal.  (You can trash the "Set up Desktop" icon at this point.)
 
