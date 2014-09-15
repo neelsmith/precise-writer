@@ -17,6 +17,9 @@ apt-get install -y emacs
 apt-get install -y emacs-goodies-el
 
 
+# Extra web browser
+apt-get install -y chromium-browser
+
 # XML editing and build systems
 apt-get install -y git
 apt-get install -y gradle
@@ -67,3 +70,12 @@ apt-get install -y python-pip
 #sudo apt-get install -y fonts-gfs-porson
 #sudo apt-get install -y fonts-gfs-solomos
 #sudo apt-get install -y fonts-gfs-theokritos
+
+#gsettings set com.canonical.Unity.Launcher favorites  "['nautilus-home.desktop', 'firefox.desktop', 'gnome-terminal.desktop']"
+
+
+#startx
+
+
+
+cp system/com.canonical.Unity.gschema.xml /usr/share/glib-2.0/schemas
