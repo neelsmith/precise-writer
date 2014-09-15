@@ -71,11 +71,9 @@ apt-get install -y python-pip
 #sudo apt-get install -y fonts-gfs-solomos
 #sudo apt-get install -y fonts-gfs-theokritos
 
-#gsettings set com.canonical.Unity.Launcher favorites  "['nautilus-home.desktop', 'firefox.desktop', 'gnome-terminal.desktop']"
-
-
-#startx
 
 
 
-cp system/com.canonical.Unity.gschema.xml /usr/share/glib-2.0/schemas
+
+
+cp /vagrant/system/com.canonical.Unity.gschema.xml /usr/share/glib-2.0/schemas
