@@ -12,7 +12,8 @@ if [ ! -d "/home/vagrant/Desktop" ]; then
 fi
 ln -s /vagrant /home/vagrant/Desktop/shared
 cp /vagrant/system/dotprofile /home/vagrant/.profile
-
+cp /vagrant/system/initgui.desktop /home/vagrant/Desktop
+chmod +x /home/vagrant/Desktop/initgui.desktop
 
 # need to have the one true editor
 # in case Neel Smith needs to work on
@@ -75,9 +76,4 @@ apt-get install -y python-pip
 #sudo apt-get install -y fonts-gfs-solomos
 #sudo apt-get install -y fonts-gfs-theokritos
 
-
-
-
-
-
-cp /vagrant/system/com.canonical.Unity.gschema.xml /usr/share/glib-2.0/schemas
+#cp /vagrant/system/com.canonical.Unity.gschema.xml /usr/share/glib-2.0/schemas
