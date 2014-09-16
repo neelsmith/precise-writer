@@ -1,7 +1,12 @@
 precise-writer
 ==============
 
-An Ubuntu 12.04 VM for writing with citedown
+A virtual machine running Ubuntu 12.04 with some basic tools for writing.
+
+## Prerequisites ##
+
+- [Vagrant](http://www.vagrantup.com/)
+- [VirtualBox](https://www.virtualbox.org/)
 
 ## Initial build and configuration
 
@@ -9,7 +14,7 @@ From a terminal on your host machine, run
 
     vagrant up
     
-When the build has completed, use the GUI login window shown below to login (password `vagrant`).
+Wait until the (long!) initial build has completed, then use the login window (shown below) to login (password `vagrant`).
 
 
 ![Login screen](imgs/login.png)
@@ -19,5 +24,5 @@ top right of the window), and log back in.  Your launcher bar should be configur
 shown below, with icons for Retext (a markdown editor), JEdit (a validating XML editor), and
 a terminal.  (You can trash the "Set up Desktop" icon at this point.)
 
-![Final state](imgs/finalstate.png)
+![Launcher bar after running "Set up Desktop"](imgs/finalstate.png)
 
