@@ -16,4 +16,7 @@ File outFile = new File(args[1])
 // add localized configuration of services...
 CitedownConverter c2m = new CitedownConverter()
 
+String md = c2m.toMarkdown(src.getText("UTF-8"))
+outFile.setText(md,"UTF-8")
+
 
