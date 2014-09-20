@@ -10,13 +10,14 @@ apt-get install -y ubuntu-desktop
 if [ ! -d "/home/vagrant/Desktop" ]; then
     mkdir "/home/vagrant/Desktop"
 fi
-ln -s /vagrant /home/vagrant/Desktop/shared
 cp /vagrant/system/dotprofile /home/vagrant/.profile
-cp /vagrant/system/initgui.desktop /home/vagrant/Desktop
-cp /vagrant/scripts/cm.desktop /home/vagrant/Desktop
-
-chmod +x /home/vagrant/Desktop/initgui.desktop
-chown -R vagrant:vagrant /home/vagrant/Desktop
+if [ ! -e "/home/vagrant/Desktop/shared" ]; then
+    ln -s /vagrant /home/vagrant/Desktop/shared
+    cp /vagrant/system/initgui.desktop /home/vagrant/Desktop
+    cp /vagrant/scripts/cm.desktop /home/vagrant/Desktop
+    chmod +x /home/vagrant/Desktop/initgui.desktop
+    chown -R vagrant:vagrant /home/vagrant/Desktop
+fi
 
 
 
@@ -34,6 +35,7 @@ apt-get install -y chromium-browser
 apt-get install -y git
 apt-get install -y gradle
 apt-get install -y jedit
+
 
 
 
@@ -82,3 +84,30 @@ apt-get install -y python-pip
 #sudo apt-get install -y fonts-gfs-theokritos
 
 #cp /vagrant/system/com.canonical.Unity.gschema.xml /usr/share/glib-2.0/schemas
+
+
+GIT=`which git`
+if [ -d "/vagrant/cd2md" ]; then
+    echo "Checking for updates to cd2md library"
+    cd /vagrant/cd2md
+    $GIT pull
+else
+    echo "Installing citedown converter"
+    cd /vagrant
+    echo  Running  $GIT clone https://github.com/neelsmith/cd2md.git
+    $GIT clone https://github.com/neelsmith/cd2md.git
+fi
+
+
+if [ ! -d "/vagrant/libs" ]; then
+    mkdir "/vagrant/libs"
+fi
+
+cd /vagrant/cd2md
+GRADLE=`which gradle`
+$GRADLE clean
+$GRADLE jar
+cp /vagrant/cd2md/build/libs/cd2md-0.0.1.jar /vagrant/libs
+ln -s /vagrant/libs/cd2md-0.0.1.jar /vagrant/libs/cd2md.jar
+
+
