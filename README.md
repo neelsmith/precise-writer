@@ -1,5 +1,5 @@
-precise-writer
-==============
+# precise-writer #
+
 
 A virtual machine running Ubuntu 12.04 with some basic tools for writing.
 
@@ -8,7 +8,7 @@ A virtual machine running Ubuntu 12.04 with some basic tools for writing.
 - [Vagrant](http://www.vagrantup.com/)
 - [VirtualBox](https://www.virtualbox.org/)
 
-## Initial build and configuration
+## Initial build and configuration ##
 
 From a terminal on your host machine, run
 
@@ -25,4 +25,15 @@ shown below, with icons for Chromium (a web browser), Retext (a markdown editor)
 a terminal.  (You can trash the "Set up Desktop" icon at this point.)
 
 ![Launcher bar after running "Set up Desktop"](imgs/finalstate.png)
+
+
+## What's included ##
+
+On your Desktop, you'll find a pair of launchers you can drag files on.
+
+1. Drag a file with extension `.md` onto the `Citedown to Markdown` launcher to create a file in pure
+markdown with all URNs resolved to URLs.  If the original file is named `FILE.md`, the converted file will be in the same directory and named `FILE-converted.md`.
+1. Drag a file onto the `View critic markup` launcher to create a new file on your Desktop named `critic-markup.html`.  Open this file in a web browser to see original, edited and "Track changes" views of the source document.
+
+
 
