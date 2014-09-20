@@ -14,7 +14,8 @@ ln -s /vagrant /home/vagrant/Desktop/shared
 cp /vagrant/system/dotprofile /home/vagrant/.profile
 cp /vagrant/system/initgui.desktop /home/vagrant/Desktop
 chmod +x /home/vagrant/Desktop/initgui.desktop
-chown vagrant /home/vagrant/Desktop/initgui.desktop
+chown -R vagrant:vagrant /home/vagrant/Desktop
+
 
 
 # need to have the one true editor
