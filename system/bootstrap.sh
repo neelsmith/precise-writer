@@ -13,6 +13,8 @@ fi
 ln -s /vagrant /home/vagrant/Desktop/shared
 cp /vagrant/system/dotprofile /home/vagrant/.profile
 cp /vagrant/system/initgui.desktop /home/vagrant/Desktop
+cp /vagrant/scripts/cm.desktop /home/vagrant/Desktop
+
 chmod +x /home/vagrant/Desktop/initgui.desktop
 chown -R vagrant:vagrant /home/vagrant/Desktop
 
