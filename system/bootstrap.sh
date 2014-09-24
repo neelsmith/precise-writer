@@ -5,7 +5,23 @@ apt-get update
 
 
 # System and account conifg:
+apt-get install -y dos2unix
 apt-get install -y ubuntu-desktop
+
+
+# Clean up any catastrophic reformatting that
+# git clone could introduce on a Windows box:
+/usr/bin/dos2unix /vagrant/system/*sh
+/usr/bin/dos2unix /vagrant/system/dotprofile
+
+/usr/bin/dos2unix /vagrant/scripts/*sh
+/usr/bin/dos2unix /vagrant/scripts/*desktop
+/usr/bin/dos2unix /vagrant/scripts/*groovy
+/usr/bin/dos2unix /vagrant/scripts/*py
+
+
+
+
 
 if [ ! -d "/home/vagrant/Desktop" ]; then
     mkdir "/home/vagrant/Desktop"
@@ -83,7 +99,7 @@ apt-get install -y python-pip
 #sudo apt-get install -y fonts-gfs-solomos
 #sudo apt-get install -y fonts-gfs-theokritos
 
-#cp /vagrant/system/com.canonical.Unity.gschema.xml /usr/share/glib-2.0/schemas
+`#cp /vagrant/system/com.canonical.Unity.gschema.xml /usr/share/glib-2.0/schemas
 
 
 GIT=`which git`
