@@ -103,11 +103,11 @@ if [ ! -d "/vagrant/libs" ]; then
     mkdir "/vagrant/libs"
 fi
 
-cd /vagrant/cd2md
-GRADLE=`which gradle`
-$GRADLE clean
-$GRADLE jar
-cp /vagrant/cd2md/build/libs/cd2md-0.0.1.jar /vagrant/libs
-ln -s /vagrant/libs/cd2md-0.0.1.jar /vagrant/libs/cd2md.jar
+#cd /vagrant/cd2md
+#GRADLE=`which gradle`
+#$GRADLE clean
+#$GRADLE jar
+#cp /vagrant/cd2md/build/libs/cd2md-0.0.1.jar /vagrant/libs
+#ln -s /vagrant/libs/cd2md-0.0.1.jar /vagrant/libs/cd2md.jar
 
 
