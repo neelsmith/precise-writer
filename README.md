@@ -1,7 +1,7 @@
 # precise-writer #
 
 
-A virtual machine running Ubuntu 12.04 with some basic tools for writing.
+A virtual machine running Ubuntu 14.04 (LTS) with some basic tools for writing.
 
 ## Prerequisites ##
 
@@ -14,7 +14,13 @@ From a terminal on your host machine, run
 
     vagrant up
     
-Wait until the (long!) initial build has completed, then use the login window (shown below) to login (password `vagrant`).
+1. Wait until the (long!) initial build has completed.
+2. Then `vagrant halt`
+3. Then `vagrant up`
+
+and you get a GUI!
+
+ then use the login window (shown below) to login (password `vagrant`).
 
 
 ![Login screen](imgs/login.png)
