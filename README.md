@@ -10,36 +10,15 @@ A virtual machine running Ubuntu 14.04 (LTS) with some basic tools for writing.
 
 ## Initial build and configuration ##
 
+
 From a terminal on your host machine, run
 
     vagrant up
     
-1. Wait until the (long!) initial build has completed.
-2. Then `vagrant halt`
-3. Then `vagrant up`
+1. Wait until the (long!) initial build has completed.  This will build, but not start the Desktop GUI.
+2. Run `vagrant halt`.  The next time you run `vagrant up`, the system will start a graphic interface.
 
-and you get a GUI!
-
- then use the login window (shown below) to login (password `vagrant`).
-
+To login to the graphic interface, use the login window (shown below) to login as the user `vagrant`,  with password `vagrant`.
 
 ![Login screen](imgs/login.png)
-
-Double click the icon labelled "Set up Desktop", then logout (using the "gear" icon at the
-top right of the window), and log back in.  Your launcher bar should be configured like the one 
-shown below, with icons for Chromium (a web browser), Retext (a markdown editor), JEdit (a validating XML editor), and
-a terminal.  (You can trash the "Set up Desktop" icon at this point.)
-
-![Launcher bar after running "Set up Desktop"](imgs/finalstate.png)
-
-
-## What's included ##
-
-On your Desktop, you'll find a pair of launchers you can drag files on.
-
-1. Drag a file with extension `.md` onto the `Citedown to Markdown` launcher to create a file in pure
-markdown with all URNs resolved to URLs.  If the original file is named `FILE.md`, the converted file will be in the same directory and named `FILE-converted.md`.
-1. Drag a file onto the `View critic markup` launcher to create a new file on your Desktop named `critic-markup.html`.  Open this file in a web browser to see original, edited and "Track changes" views of the source document.
-
-
 
