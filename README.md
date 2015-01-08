@@ -22,3 +22,6 @@ To login to the graphic interface, use the login window (shown below) to login a
 
 ![Login screen](imgs/login.png)
 
+
+
+
