@@ -80,3 +80,11 @@ apt-get -y install jedit
 apt-get -y install openjdk-7-jdk
 apt-get -y install groovy
 apt-get -y install gradle
+
+
+
+################################################################
+# nodejs bundle
+################################################################
+apt-get -y install npm
+npm install beautiful-docs
