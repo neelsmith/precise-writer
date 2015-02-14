@@ -1,0 +1,30 @@
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            trusty-writer
+tagline:          'A VM for writing with citedown'
+description:      'Ubuntu 14.04 virtual machine with tools for scholarly writing'
+baseurl: /trusty-writer/
+
+
+author:
+  name:           'Neel Smith'
+ 
+
+paginate:         5
+
+
+version:          0.12.0
+
+links:
+  - title: Neel Smith on github
+    url: http://neelsmith.github.io/
+    external: true
+  - title: Github source repository
+    url: https://github.com/neelsmith/trusty-writer
+    external: true
